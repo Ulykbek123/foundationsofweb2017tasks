@@ -3,7 +3,54 @@
   <head>
     <head>
 	<style>
-		/* Write your code here */
+	 body{
+      position: relative;
+    }
+    .crimg{
+      border:1px solid #f8f8f8;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .crimg img{
+      background-color: green;
+    }
+    .crimg img:last-child{
+      background-color: blue;
+    }
+    .card{
+      margin: 5px;
+      padding: 5px;
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      border: 1px solid purple;
+    } 
+    .info{
+      margin-left: 5px;
+    }
+    .price{
+      padding-top: 40px;
+      font: 20px bold;
+    }
+
+    @media screen and (max-width: 400px) {
+      .card img{
+        display: none;
+      }
+      .desc{
+        display: none;
+      }
+      .card{
+        
+      }
+      .price{
+        padding-top: 0;
+        position: absolute;
+        top:1px;
+        right:1px;
+      }
+    }	/* Write your code here */
 	</style>
     </head>
   </head>

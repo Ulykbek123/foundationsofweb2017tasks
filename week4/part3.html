@@ -4,6 +4,92 @@
   <head>
 	<style>
 		/* Write your code here */
+		.overlay{
+    	z-index: 1;
+    	position: fixed;
+    	right: 0;
+    	left: 0;
+    	display: flex;
+    	justify-content: center;
+    	background-color: rgba(135,135,135,0.8);
+    	margin-top: 150px;
+    	margin-right: 150px;
+    	margin-left: 150px;
+    	border:1px solid red;
+    }
+    
+    header{
+      display: flex;
+      justify-content: center;
+    }
+
+    nav{      
+      background-color: black;
+      border-right-color: red;
+      border-left-color: red;
+      width: 100%;
+      justify-content: center;
+    }
+	
+	section{
+		width: 40%;
+		justify-content: center;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+    nav a{
+      width: 40%;
+      color: white;
+      justify-content: center;
+      text-decoration: none;
+      border-left: 1px solid red;
+      font:50px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    nav a:last-child{
+   	  border-right: 1px solid red;
+    }
+
+    body{
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+    }
+
+    .card{
+    	margin: 10px;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      border:1px solid blue;
+      border-radius: 15px;
+    }
+
+    .title{
+      position: absolute;
+      background-color: blue;
+      color: white;
+      border-top-left-radius: 15px;
+      padding-left: 5px;
+      padding-right: 5px;
+      top: 0;
+    }
+
+    .card img{
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+    .price{
+      position: absolute;
+      align-self: flex-end;
+    }
+    .icon{
+      position: absolute;
+      right: 0;
+	  top: 0; 
+    }
 	</style>
   </head>
 
